@@ -13,5 +13,52 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="소스 파일\조합론">
+      <UniqueIdentifier>{1091b310-4a45-4e30-ba1b-aff6eade0885}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\조합론\solved">
+      <UniqueIdentifier>{3b7d1eb1-2f70-44ee-8905-70000966fc63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\조합론\solving">
+      <UniqueIdentifier>{61e41c5c-77b2-4411-9515-14d963040ddd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\기초알고리즘프로그래밍">
+      <UniqueIdentifier>{ed004cef-28d4-4496-86f8-f30a95cf6a43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\기초알고리즘프로그래밍\solved">
+      <UniqueIdentifier>{1f54f0ad-7fb5-44e5-bd99-30d34694f929}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\기초알고리즘프로그래밍\solving">
+      <UniqueIdentifier>{ec8bfd12-e856-4275-a0a0-449225b563b7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="조합론_1.cpp">
+      <Filter>소스 파일\조합론\solving</Filter>
+    </ClCompile>
+    <ClCompile Include="조합론_2.cpp">
+      <Filter>소스 파일\조합론\solved</Filter>
+    </ClCompile>
+    <ClCompile Include="조합론_3.cpp">
+      <Filter>소스 파일\조합론</Filter>
+    </ClCompile>
+    <ClCompile Include="조합론_4.cpp">
+      <Filter>소스 파일\조합론</Filter>
+    </ClCompile>
+    <ClCompile Include="기초알고리즘프로그래밍_1.cpp">
+      <Filter>소스 파일\기초알고리즘프로그래밍\solving</Filter>
+    </ClCompile>
+    <ClCompile Include="기초알고리즘프로그래밍_2.cpp">
+      <Filter>소스 파일\기초알고리즘프로그래밍\solving</Filter>
+    </ClCompile>
+    <ClCompile Include="기초알고리즘프로그래밍_3.cpp">
+      <Filter>소스 파일\기초알고리즘프로그래밍\solving</Filter>
+    </ClCompile>
+    <ClCompile Include="기초알고리즘프로그래밍_4.cpp">
+      <Filter>소스 파일\기초알고리즘프로그래밍\solving</Filter>
+    </ClCompile>
+    <ClCompile Include="기초알고리즘프로그래밍_5.cpp">
+      <Filter>소스 파일\기초알고리즘프로그래밍\solving</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
