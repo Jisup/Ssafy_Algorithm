@@ -31,6 +31,15 @@
     <Filter Include="소스 파일\기초알고리즘프로그래밍\solving">
       <UniqueIdentifier>{ec8bfd12-e856-4275-a0a0-449225b563b7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\SWExpertAcademy">
+      <UniqueIdentifier>{cd8058ed-7b5d-402f-a7e7-612becffa4a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\SWExpertAcademy\Desolved">
+      <UniqueIdentifier>{5c6e0e2a-972e-4765-816b-b8f51910bf98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\SWExpertAcademy\Upload_Tistory">
+      <UniqueIdentifier>{f29b2b44-9395-4b30-bc52-0a5ae279319d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="조합론_1.cpp">
@@ -60,5 +69,28 @@
     <ClCompile Include="기초알고리즘프로그래밍_5.cpp">
       <Filter>소스 파일\기초알고리즘프로그래밍\solving</Filter>
     </ClCompile>
+    <ClCompile Include="1289_원재의 메모리 복구하기.cpp">
+      <Filter>소스 파일\SWExpertAcademy</Filter>
+    </ClCompile>
+    <ClCompile Include="5215_햄버거 다이어트.cpp">
+      <Filter>소스 파일\SWExpertAcademy</Filter>
+    </ClCompile>
+    <ClCompile Include="1945_간단한 소인수분해.cpp">
+      <Filter>소스 파일\SWExpertAcademy</Filter>
+    </ClCompile>
+    <ClCompile Include="sample.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1928_Base64 Decoder.cpp">
+      <Filter>소스 파일\SWExpertAcademy\Desolved</Filter>
+    </ClCompile>
+    <ClCompile Include="1986_지그재그 숫자.cpp">
+      <Filter>소스 파일\SWExpertAcademy</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="input.txt">
+      <Filter>소스 파일</Filter>
+    </Text>
   </ItemGroup>
 </Project>

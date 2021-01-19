@@ -139,6 +139,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="1289_원재의 메모리 복구하기.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="1928_Base64 Decoder.cpp" />
+    <ClCompile Include="1945_간단한 소인수분해.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="1986_지그재그 숫자.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="5215_햄버거 다이어트.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="sample.cpp" />
     <ClCompile Include="기초알고리즘프로그래밍_1.cpp" />
     <ClCompile Include="기초알고리즘프로그래밍_2.cpp" />
     <ClCompile Include="기초알고리즘프로그래밍_3.cpp" />
@@ -152,6 +166,9 @@
     </ClCompile>
     <ClCompile Include="조합론_3.cpp" />
     <ClCompile Include="조합론_4.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="input.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
