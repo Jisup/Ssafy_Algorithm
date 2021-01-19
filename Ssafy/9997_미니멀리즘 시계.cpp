@@ -1,4 +1,4 @@
-/*
+
 #include <iostream>
 #pragma warning(disable:4996)
 
@@ -17,7 +17,12 @@ int main() {
 	int tc;
 	cin >> tc;
 	for (int t = 1; t <= tc; t++) {
-
+		int theta;
+		cin >> theta;
+		theta *= 2;
+		int hour = 0, minute = 0;
+		hour = theta / 60;
+		minute = theta % 60;
+		cout << "#" << t << " " << hour << " " << minute << endl;
 	}
 }
-*/
