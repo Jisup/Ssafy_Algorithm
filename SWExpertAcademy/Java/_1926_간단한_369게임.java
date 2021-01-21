@@ -25,4 +25,4 @@ public class _1926_간단한_369게임 {
 		}
 		sc.close();
 	}
-}
+} 
