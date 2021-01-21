@@ -34,5 +34,6 @@ class _2007_패턴_마디의_길이 {
 			}
 			System.out.println("#"+t+" "+len);
 		}
+		sc.close();
 	}
 }

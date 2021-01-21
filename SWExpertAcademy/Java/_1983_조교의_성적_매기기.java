@@ -18,7 +18,7 @@ public class _1983_조교의_성적_매기기 {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		int tc = sc.nextInt();
-
+ 
 		String result[] = { "A+", "A0", "A-", "B+", "B0", "B-", "C+", "C0", "C-", "D0"};
 
 		for (int t = 1; t <= tc; t++) {
@@ -46,5 +46,6 @@ public class _1983_조교의_성적_매기기 {
 				}
 			}
 		}
+		sc.close();
 	}
 }

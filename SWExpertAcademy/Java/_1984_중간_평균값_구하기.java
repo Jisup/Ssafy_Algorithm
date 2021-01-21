@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class _1984_중간_평균값_구하기 {
-
+ 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
@@ -19,6 +19,6 @@ public class _1984_중간_평균값_구하기 {
 //			System.out.println((double)((sum-high-low)/8));
 			System.out.println("#"+t+" "+Math.round((double)(sum-high-low)/8));
 		}
+		sc.close();
 	}
-
 }

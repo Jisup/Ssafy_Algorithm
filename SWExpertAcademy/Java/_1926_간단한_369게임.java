@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class _1926_간단한_369게임 {
-
+ 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
@@ -23,5 +23,6 @@ public class _1926_간단한_369게임 {
 				}
 			}
 		}
+		sc.close();
 	}
 }

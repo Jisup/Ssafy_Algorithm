@@ -24,6 +24,6 @@ public class _2005_ÆÄ½ºÄ®ÀÇ_»ï°¢Çü {
 				System.out.println();
 			}
 		}
+		sc.close();
 	}
-
 }
