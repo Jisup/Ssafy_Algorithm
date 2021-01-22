@@ -12,7 +12,7 @@ class student {
 	}
 }
 
-public class _1983_Á¶±³ÀÇ_¼ºÀû_¸Å±â±â {
+public class _1983_ì¡°êµì˜_ì„±ì _ë§¤ê¸°ê¸° {
 
 	public static void main(String[] args) throws Throwable {
 		// TODO Auto-generated method stub

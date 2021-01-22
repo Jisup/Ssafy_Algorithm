@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class _1984_Áß°£_Æò±Õ°ª_±¸ÇÏ±â {
+public class _1984_ì¤‘ê°„_í‰ê· ê°’_êµ¬í•˜ê¸° {
  
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

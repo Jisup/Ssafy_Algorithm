@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
-class _2007_ÆĞÅÏ_¸¶µğÀÇ_±æÀÌ {
-
+public class _2007_íŒ¨í„´_ë§ˆë””ì˜_ê¸¸ì´ {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);

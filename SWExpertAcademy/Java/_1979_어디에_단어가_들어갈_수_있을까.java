@@ -1,16 +1,9 @@
 import java.util.Scanner;
 
-public class _1979_¾îµğ¿¡_´Ü¾î°¡_µé¾î°¥_¼ö_ÀÖÀ»±î {
+public class _1979_ì–´ë””ì—_ë‹¨ì–´ê°€_ë“¤ì–´ê°ˆ_ìˆ˜_ìˆì„ê¹Œ{
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		/*
-		 * 1) °¡·Îº®¸é¿¡¼­½ÃÀÛ
-		 * 2) ¼¼·Îº®¸é¿¡¼­½ÃÀÛ
-		 * #) ¸¸¾à º®¸é¿¡¼­ ½ÃÀÛÇß´Âµ¥ º®ÀÌ¶ó¸é ±ÛÀÚÄ­ÀÌ³ª¿Ã¶§±îÁö ÀüÁø
-		 * #) ±ÛÀÚÄ­¿¡¼­ ½ÃÀÛÇßÀ»¶§ºÎÅÍ º®/¾Æ¿ô¶óÀÎÀ» ¸¸³¯¶§±îÁö Ä«¿îÆ®
-		 * #) ÀÔ·Â°ª°ú °°´Ù¸é Áõ°¡ 
-		 */
 		Scanner sc = new Scanner(System.in);
 		int tc = sc.nextInt();
 		for(int t=1;t<=tc;t++) {
