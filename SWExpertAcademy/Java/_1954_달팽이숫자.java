@@ -18,7 +18,6 @@ public class _1954_달팽이숫자 {
 	static int ay[] = {0,1,0,-1};
 	static int ax[] = {1,0,-1,0};
 	static void solve() {
-		int cnt=1;
 		ary = new int [N][N];
 		for(int item[] : ary)
 			Arrays.fill(item, 0);
