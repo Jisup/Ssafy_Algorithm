@@ -1,3 +1,4 @@
+package _2_2;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -9,7 +10,7 @@ public class _1954_달팽이숫자 {
 		int tc = sc.nextInt();
 		for(int t=1;t<=tc;t++) {
 			N = sc.nextInt();
-			System.out.println("#"+tc);
+			System.out.println("#"+t);
 			solve();
 			view();
 		}
@@ -46,3 +47,16 @@ public class _1954_달팽이숫자 {
 		init();
 	}
 }
+
+//int now=1;
+//
+//for (int i = 0; i < n / 2; i++) {
+//    for (int j = i; j < n - i; j++) arr[i][j] = now++;
+//
+//    for (int j = i + 1; j < n - i; j++) arr[j][n-i-1] = now++;
+//
+//    for (int j = i + 1; j < n - i; j++) arr[n - i - 1][n - j - 1] = now++;
+//
+//    for (int j = i + 1; j < n - i-1; j++) arr[n - j - 1][i] = now++;
+//}
+//if ((n & 1)!=0) arr[n / 2][n / 2] = now;
