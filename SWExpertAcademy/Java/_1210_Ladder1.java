@@ -5,11 +5,11 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
-class yx {
+class xy_1210 {
 	int y;
 	int x;
 
-	yx(int y, int x) {
+	xy_1210(int y, int x) {
 		this.y = y;
 		this.x = x;
 	}
@@ -51,7 +51,7 @@ public class _1210_Ladder1 {
 
 	static void solve(int ary[][]) {
 		ArrayList<Integer> bridge = new ArrayList<Integer>();
-		Queue<yx> q = new LinkedList<yx>();
+		Queue<xy_1210> q = new LinkedList<xy_1210>();
 		int nowidx = 0;
 		for (int t = 0; t < 100; t++) {
 //		for(int t=0;t<10;t++) {
@@ -62,10 +62,10 @@ public class _1210_Ladder1 {
 				bridge.add(t);
 			}
 		}
-		q.add(new yx(99, bridge.get(nowidx)));
+		q.add(new xy_1210(99, bridge.get(nowidx)));
 //		System.out.println(bridge.get(nowidx));
 		while (!q.isEmpty()) {
-			yx out = q.poll();
+			xy_1210 out = q.poll();
 			int y = out.getY();
 			int x = out.getX();
 //			System.out.println(y + " " + x);
@@ -76,17 +76,17 @@ public class _1210_Ladder1 {
 			if (x - 1 > 0 && ary[y][x - 1] == 1) {
 				nowidx -= 1;
 				x = bridge.get(nowidx);
-				q.add(new yx(y - 1, x));
+				q.add(new xy_1210(y - 1, x));
 				continue;
 			}
 			if (x + 1 < 100 && ary[y][x + 1] == 1) {
 				nowidx += 1;
 				x = bridge.get(nowidx);
-				q.add(new yx(y - 1, x));
+				q.add(new xy_1210(y - 1, x));
 				continue;
 			}
 
-			q.add(new yx(y - 1, x));
+			q.add(new xy_1210(y - 1, x));
 		}
 	}
 

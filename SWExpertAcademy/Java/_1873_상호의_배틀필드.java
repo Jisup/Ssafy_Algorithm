@@ -2,11 +2,11 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-class xy {
+class xy_1873 {
 	int y;
 	int x;
 	int dir;
-	xy(int y, int x, int dir) {
+	xy_1873(int y, int x, int dir) {
 		this.y=y;
 		this.x=x;
 		this.dir=dir;
@@ -50,21 +50,21 @@ public class _1873_상호의_배틀필드 {
 			H = Integer.parseInt(b[0]);
 			W = Integer.parseInt(b[1]);
 			map = new char[H][W];
-			xy start = null;
+			xy_1873 start = null;
 			for(int i=0;i<H;i++) {
 				map[i] = br.readLine().toCharArray();
 				for(int j=0;j<W;j++) {
 					if (map[i][j] == '>') {
-						start = new xy(i,j,3);
+						start = new xy_1873(i,j,3);
 					}
 					else if(map[i][j] == '^') {
-						start = new xy(i,j,0);
+						start = new xy_1873(i,j,0);
 					}
 					else if(map[i][j] == 'v') {
-						start = new xy(i,j,1);
+						start = new xy_1873(i,j,1);
 					}
 					else if(map[i][j] == '<') {
-						start = new xy(i,j,2);
+						start = new xy_1873(i,j,2);
 					}
 				}
 			}
@@ -74,7 +74,7 @@ public class _1873_상호의_배틀필드 {
 			solve(start);
 		}
 	}
-	static void solve(xy tank) {
+	static void solve(xy_1873 tank) {
 		if (tank==null) return;
 		
 		for(int i=0;i<cml;i++) {
@@ -103,7 +103,7 @@ public class _1873_상호의_배틀필드 {
 		}
 		view();
 	}
-	static void move(xy tank) {
+	static void move(xy_1873 tank) {
 		int dir = tank.getDir();
 		int y = tank.getY();
 		int x = tank.getX();
@@ -117,7 +117,7 @@ public class _1873_상호의_배틀필드 {
 			map[ny][nx] = tv[dir];
 		}
 	}
-	static void shoot(xy tank) {
+	static void shoot(xy_1873 tank) {
 		int dir = tank.getDir();
 		int y = tank.getY();
 		int x = tank.getX();
