@@ -55,25 +55,25 @@ public class _7673_영이는_영이_시져시져 {
 			}
 	}
 	static void solve() {
-		for(int i=1;i<=N;i++)
-			for(int j=1;j<=N;j++) {
+		for(int i=N;i>=1;i--)
+			for(int j=N;j>=1;j--) {
 				if (map[i][j] == 0) continue;
-				if (i==1 && j==1) continue;
-				if (i==1) {
-					_2[i][j] = _2[i][j] + _2[i][j-1];
-					_5[i][j] = _5[i][j] + _5[i][j-1];
+				if (i==N && j==N) continue;
+				if (i==N) {
+					_2[i][j] = _2[i][j] + _2[i][j+1];
+					_5[i][j] = _5[i][j] + _5[i][j+1];
 					continue;
 				}
-				if (j==1) {
-					_2[i][j] = _2[i][j] + _2[i-1][j];
-					_5[i][j] = _5[i][j] + _5[i-1][j];
+				if (j==N) {
+					_2[i][j] = _2[i][j] + _2[i+1][j];
+					_5[i][j] = _5[i][j] + _5[i+1][j];
 					continue;
 				}
 				
-				int l2 = _2[i][j]+_2[i][j-1];
-				int l5 = _5[i][j]+_5[i][j-1];
-				int u2 = _2[i][j]+_2[i-1][j];
-				int u5 = _5[i][j]+_5[i-1][j];
+				int l2 = _2[i][j]+_2[i][j+1];
+				int l5 = _5[i][j]+_5[i][j+1];
+				int u2 = _2[i][j]+_2[i+1][j];
+				int u5 = _5[i][j]+_5[i+1][j];
 				int left = Math.min(l2, l5);
 				int up = Math.min(u2, u5);
 				if (left < up) {
@@ -85,7 +85,7 @@ public class _7673_영이는_영이_시져시져 {
 					_5[i][j] = u5;
 				}
 			}
-		System.out.println(Math.min(_2[N][N], _5[N][N]));
+		System.out.println(Math.min(_2[1][1], _5[1][1]));
 	}
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		init();
