@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
-class Data {
+class Data_5215 {
 	int sf;
 	int cal;
-	Data(int sf, int cal) {
+	Data_5215(int sf, int cal) {
 		this.sf=sf;
 		this.cal=cal;
 	}
@@ -11,7 +11,7 @@ class Data {
 public class _5215_햄버거_다이어트 {
 	static final int MAX = 21;
 	static int N, max_cal;
-	static Data food[] = new Data[MAX];
+	static Data_5215 food[] = new Data_5215[MAX];
 	
 	static void init() {
 		Scanner sc = new Scanner(System.in);
@@ -21,7 +21,7 @@ public class _5215_햄버거_다이어트 {
 			max_cal = sc.nextInt();
 			
 			for(int i=0;i<N;i++)
-				food[i] = new Data(sc.nextInt(), sc.nextInt());
+				food[i] = new Data_5215(sc.nextInt(), sc.nextInt());
 			
 			System.out.print("#"+t+" ");
 			solve(1<<N);
