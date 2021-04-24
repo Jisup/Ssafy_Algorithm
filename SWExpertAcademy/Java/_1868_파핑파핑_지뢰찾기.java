@@ -1,31 +1,6 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.Queue;
+import java.io.*;
+import java.util.*;
 
-class xy_1868 {
-	int y;
-	int x;
-	xy_1868(int y, int x) {
-		this.y=y;
-		this.x=x;
-	}
-	public int getY() {
-		return y;
-	}
-	public void setY(int y) {
-		this.y = y;
-	}
-	public int getX() {
-		return x;
-	}
-	public void setX(int x) {
-		this.x = x;
-	}
-}
 public class _1868_파핑파핑_지뢰찾기 {
 	static final int MAX = 301;
 	static int N;
@@ -37,7 +12,15 @@ public class _1868_파핑파핑_지뢰찾기 {
 	static char map[][] = new char[MAX][MAX];
 	static int count[][] = new int[MAX][MAX];
 	static boolean visit[][] = new boolean[MAX][MAX];
-	static ArrayList<xy_1868> mine = new ArrayList<>();
+	static class xy {
+		int y;
+		int x;
+		xy(int y, int x) {
+			this.y=y;
+			this.x=x;
+		}
+	}
+	static ArrayList<xy> mine = new ArrayList<>();
 	
 	static void init() throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -50,7 +33,7 @@ public class _1868_파핑파핑_지뢰찾기 {
 				map[i] = br.readLine().toCharArray();
 				for(int j=0;j<N;j++)
 					if (map[i][j] == '*')
-						mine.add(new xy_1868(i, j));
+						mine.add(new xy(i, j));
 			}
 			click=0;
 			mapset();
@@ -66,10 +49,10 @@ public class _1868_파핑파핑_지뢰찾기 {
 		for(boolean item[] : visit)
 			Arrays.fill(item, false);
 		
-		for(xy_1868 item : mine) {
+		for(xy item : mine) {
 			for(int i=0;i<8;i++) {
-				int ny = item.getY()+ay[i];
-				int nx = item.getX()+ax[i];
+				int ny = item.y+ay[i];
+				int nx = item.x+ax[i];
 				if (!range(ny, nx) && range_visit(ny, nx)) {
 					count[ny][nx]++;
 				}
@@ -78,23 +61,23 @@ public class _1868_파핑파핑_지뢰찾기 {
 		
 	}
 	static void search() {
-		Queue<xy_1868>q=new LinkedList<>();
+		Queue<xy>q=new LinkedList<>();
 		for(int i=0;i<N;i++)
 			for(int j=0;j<N;j++)
 				if (count[i][j] == 0 && range_visit(i, j)) {
-					q.add(new xy_1868(i, j));
+					q.add(new xy(i, j));
 					visit[i][j] = true;
 					click++;
 					while(!q.isEmpty()) {
-						xy_1868 out = q.poll();
-						int y = out.getY();
-						int x = out.getX();
+						xy out = q.poll();
+						int y = out.y;
+						int x = out.x;
 						for(int k=0;k<8;k++) {
 							int ny = y+ay[k];
 							int nx = x+ax[k];
 							if (!range(ny, nx) && range_visit(ny, nx)) {
 								if (count[ny][nx] == 0)
-									q.add(new xy_1868(ny, nx));
+									q.add(new xy(ny, nx));
 								visit[ny][nx] = true;
 							}
 						}
